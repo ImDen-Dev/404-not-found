@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+header {
+  width: 100%;
+}
+
+.logo {
+  padding: 40px 0;
+}
+
+.logo a {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 1.71rem;
+  line-height: 1.8rem;
+  letter-spacing: -0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.not-found {
+  width: 100%;
+  padding: 45px 0;
+}
+
+.not-found__img {
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.not-found__img img {
+  display: block;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.not-found__text {
+  width: 100%;
+}
+
+.not-found__text-block {
+  width: 100%;
+  max-width: 586px;
+  margin: 0 auto;
+}
+
+.not-found__text-block h1 {
+  font-weight: 700;
+  font-size: 3.43rem;
+  line-height: 5.1rem;
+  letter-spacing: -0.035em;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.not-found__text-block p {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.93rem;
+  letter-spacing: -0.035em;
+  margin-bottom: 66px;
+  color: #333333;
+}
+
+.not-found__text-block a {
+  display: inline-block;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.035em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 24px 42px;
+  border: 1px solid #333333;
+  background-color: #333333;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.not-found__text-block a:hover {
+  background-color: transparent;
+  color: #333333;
+}
+
+.copy {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.21rem;
+  color: #333333;
+  text-align: center;
+  padding: 42px 0;
+}
+
+@media only screen and (min-width: 750px) {
+  .not-found {
+    display: flex;
+    flex-direction: row;
+  }
+  .not-found__img,
+  .not-found__text {
+    flex: 1 0 50%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .not-found__text-block h1 {
+    font-size: 4.6rem;
+    line-height: 6.77rem;
+    margin-bottom: 36px;
+  }
+
+  .not-found__text-block p {
+    font-size: 1.71rem;
+    line-height: 2.51rem;
+  }
+}
